@@ -23,6 +23,10 @@ mongoose
     console.log("Failed to connect with DB", err);
   });
 
+app.get("/", (req, res) => {
+  res.send("Learning API Bassics");
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log("App Sterted");
